@@ -1,0 +1,1 @@
+select profiles.id, profiles.username, profiles.email, profiles.admin from profiles where username = $1 limit 1;
