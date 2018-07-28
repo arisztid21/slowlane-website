@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 import {Link} from 'react-router-dom';
+import Familia from './all_bios';
 
 
 class Bios extends Component{
@@ -50,6 +51,7 @@ class Bios extends Component{
         return(
             <div>
                 {user}
+                <Familia/>
                 bios
             </div>
         )
