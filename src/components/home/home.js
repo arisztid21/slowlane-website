@@ -47,9 +47,11 @@ class Home extends Component{
         </div>
 
         return(
-            <div>
+            <div className="home">
+            <header>
                 {user}
-                SILLY THINGS HERE AT HOME
+            </header>
+                Welcome to our site.
             </div>
         )
     }

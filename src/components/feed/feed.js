@@ -47,8 +47,10 @@ class Feed extends Component{
         </div>
 
         return(
-            <div>
+            <div className="feed">
+            <header>
                 {user}
+            </header>
                 feed
             </div>
         )

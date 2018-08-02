@@ -1,0 +1,10 @@
+.about{
+    background: rgb(97, 97, 97);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background: black;
+    width: 100%;
+    height: 10%
+}
