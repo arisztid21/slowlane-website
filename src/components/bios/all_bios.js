@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './bios.css';
 
 class Familia extends Component{
     render(){

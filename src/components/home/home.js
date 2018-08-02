@@ -48,7 +48,7 @@ class Home extends Component{
 
         return(
             <div className="home">
-            <header>
+            <header className="home">
                 {user}
             </header>
                 Welcome to our site.

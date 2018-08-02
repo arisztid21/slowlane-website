@@ -48,7 +48,7 @@ class About extends Component{
 
         return(
             <div className="about">
-            <header>
+            <header className="about">
                 {user}
             </header>
                 AboutUs

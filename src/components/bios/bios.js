@@ -51,7 +51,7 @@ class Bios extends Component{
 
         return(
             <div className="bios">
-            <header>
+            <header className="bios">
                 {user}
             </header>
                 <Familia/>
