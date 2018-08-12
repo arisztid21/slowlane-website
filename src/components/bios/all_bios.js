@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 import './bios.css';
+import {vatos_car} from './vatos_car.png';
+import {robert_alma} from './robert_alma.png';
+import {roberts_truck} from './roberts_truck.png';
 
 class Familia extends Component{
     render(){
@@ -7,7 +10,7 @@ class Familia extends Component{
             <div className="all_bios">
                 <div classname = "vato">
                     <h2>Vato</h2>
-                    <img src="vatos_car.png" alt="vato's car" height="30" width="30"/>
+                    <img src={vatos_car} alt="vato's car" height="30" width="30"/>
                     <p>
                         As a baby I grew up around cars. My dad cruised and so did his dad and mom before him.
                         My dad and tios owned a paint and body so there was always something with cars happening in my family.
@@ -21,8 +24,8 @@ class Familia extends Component{
                 </div>
                 <div className = "robert">
                     <h2>Robert</h2>
-                    <img src="roberts_truck.png" alt="robert's truck" height="30" width="30"/>
-                    <img src="robert_alma.png" alt="robert and alma" height="30" width="30"/>
+                    <img src={roberts_truck} alt="robert's truck" height="30" width="30"/>
+                    <img src={robert_alma} alt="robert and alma" height="30" width="30"/>
                     <p>
                         I became interested when Vato's cousin had brought in a lowrider bike. It made me want to create my own, so I started building 
                         my own lowrider bike. I started going to small events and that inspired me to see more. I had introduced my wife to lowriding,
