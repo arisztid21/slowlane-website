@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import './bios.css';
-import {vatos_car} from './vatos_car.png';
-import {robert_alma} from './robert_alma.png';
-import {roberts_truck} from './roberts_truck.png';
+import vatos_car from './vatos_car.png';
+import robert_alma from './robert_alma.png';
+import roberts_truck from './roberts_truck.png';
 
 class Familia extends Component{
     render(){
