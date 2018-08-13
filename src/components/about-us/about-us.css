@@ -1,7 +1,7 @@
-.about{
+/* .about{
     background: rgb(97, 97, 97);
     min-height: 1500%;
-}
+} */
 header.about{
     display: flex;
     justify-content: space-between;
