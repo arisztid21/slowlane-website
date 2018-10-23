@@ -1,15 +1,21 @@
-/* .bios{
-    background: rgb(97, 97, 97);
-    min-height: 1500%;
-} */
-header.bios{
+
+header{
     display: flex;
-    justify-content: space-between;
     background: black;
     width: 100%;
-    height: 20%;
-    color: white;
+    height: 130px;
+    color: rgb(97, 97, 97);
+    flex-direction: row;
+    justify-content: space-evenly; 
 }
 .all_bios{
-   text-align: center
+   text-align: center;
+   color: whitesmoke;
+   width: 1000px;
+   margin: 0 auto;
 }
+
+img{
+    box-shadow: 1px 1px 10px rgb(24, 24, 24);
+}
+

@@ -1,3 +1,38 @@
 body{
     background-color: rgb(97, 97, 97);
+    color: whitesmoke;
+}
+
+a{
+    position: relative;
+    top: 70%;
+    left: 5%;
+    font-size: 33px;
+    color: whitesmoke;
+    font-family: 'Pinyon Script', cursive;
+    letter-spacing: 1px;
+    margin:0 5px;
+    text-decoration-line: none;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    box-shadow: none;
+    position: relative;
+    left: 3%;
+}
+
+.moto{
+    font-size: 48px;
+    font-family: 'Pinyon Script', cursive;
+    color: whitesmoke;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    width: 520px;
+    position: relative;
+    left: 7%;
+    top: 8%;
 }

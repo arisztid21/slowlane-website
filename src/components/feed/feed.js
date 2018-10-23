@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 import {Link} from 'react-router-dom';
+import slowlane from './slowlane.png';
 
 class Feed extends Component{
     constructor(){
@@ -27,7 +28,7 @@ class Feed extends Component{
             <Link to="/bios">Bios</Link>
             <Link to="/feed">Feed</Link>
             <Link to="/about">About Us</Link>
-            <Link to="/login/register">Login/Register</Link>
+            {/* <Link to="/login/register">Login/Register</Link> */}
         </div>
         : 
         this.state.user ? 
@@ -36,7 +37,7 @@ class Feed extends Component{
             <Link to="/bios">Bios</Link>
             <Link to="/feed">Feed</Link>
             <Link to="/about">About Us</Link>
-            <Link to="/login/register">Login/Register</Link>
+            {/* <Link to="/login/register">Login/Register</Link> */}
         </div>
          : 
         <div>
@@ -49,6 +50,8 @@ class Feed extends Component{
         return(
             <div className="feed">
             <header className="feed">
+            <img className="logo" src={slowlane} alt="logo" width="170" />
+            <div className="moto">"We're not a car club, We're Familia"</div>
                 {user}
             </header>
                 feed

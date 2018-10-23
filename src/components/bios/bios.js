@@ -3,6 +3,7 @@ import axios from 'axios';
 import {Link} from 'react-router-dom';
 import Familia from './all_bios';
 import "./bios.css";
+import slowlane from './slowlane.png';
 
 
 class Bios extends Component{
@@ -30,7 +31,7 @@ class Bios extends Component{
             <Link to="/bios">Bios</Link>
             <Link to="/feed">Feed</Link>
             <Link to="/about">About Us</Link>
-            <Link to="/login/register">Login/Register</Link>
+            {/* <Link to="/login/register">Login/Register</Link> */}
         </div>
         : 
         this.state.user ? 
@@ -39,7 +40,7 @@ class Bios extends Component{
             <Link to="/bios">Bios</Link>
             <Link to="/feed">Feed</Link>
             <Link to="/about">About Us</Link>
-            <Link to="/login/register">Login/Register</Link>
+            {/* <Link to="/login/register">Login/Register</Link> */}
         </div>
          : 
         <div>
@@ -51,7 +52,9 @@ class Bios extends Component{
 
         return(
             <div className="bios">
-            <header className="bios">
+            <header>
+            <img className="logo" src={slowlane} alt="logo" width="170" />
+            <div className="moto">"We're not a car club, We're Familia"</div>
                 {user}
             </header>
                 <Familia/>

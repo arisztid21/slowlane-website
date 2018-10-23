@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 import {Link} from 'react-router-dom';
+import './login.css';
 
 class Login extends Component {
     state = {
@@ -57,16 +58,16 @@ class Login extends Component {
   
     render() {
       const { user, showRegister, message} = this.state;
-      const userData = JSON.stringify(user, null, 2);
-      const signUp = <div>
-        email: <input type="email" ref="email" />
+      // const userData = JSON.stringify(user, null, 2);
+      const signUp = <div className="signup-input">
+        Email: <input type="email" ref="email" />
         {' '}
         Username: <input ref="username" />
         {' '}
         Password: <input type="password" ref="password" />
         {' '}
       </div>
-      const login =<div>
+      const login =<div className="login-input">
       Username: <input ref="username" />
       {' '}
       Password: <input type="password" ref="password" />
@@ -74,34 +75,34 @@ class Login extends Component {
     </div>
   
       return (
-        <div className="App">
+        <div>
           <header className="App-header">
-            <h1 className="App-title">Login/Register</h1>
+            <h1 className="login-register">Login/Register</h1>
           </header>
-          <div className="App-intro">
+          <div>
             {!user && <div>
-              <a href="javascript:void(0)" onClick={() => this.setState({ showRegister: false })}>Login</a>
+              <a className="login-link" href="javascript:void(0)" onClick={() => this.setState({ showRegister: false })}>Login</a>
               {' '}
-              <a href="javascript:void(0)" onClick={() => this.setState({ showRegister: true })}>Register</a>
+              <a className="register-link" href="javascript:void(0)" onClick={() => this.setState({ showRegister: true })}>Register</a>
               <div className="login-or-register">
                 {showRegister && <div>
-                  <h2>Register</h2>
+                  <h2 className="register-sign">Register</h2>
                   {signUp}
-                  <button onClick={this.register}>Register</button>
+                  <button className="register" onClick={this.register}>Register</button>
                 </div>}
                 {!showRegister && <div>
-                  <h2>Log in</h2>
+                  <h2 className="login-sign">Log in</h2>
                   {login}
-                  <button onClick={this.login}>Log in</button>
+                  <button className="login" onClick={this.login}>Login</button>
                 </div>}
                 {message}
               </div>
             </div>}
             {user && <div className="user-info">
-              <h2>User data:</h2>
-              <div>{ userData }</div>
-              <Link to='/'>Back To HomePage</Link>
-              <button onClick={this.logout}>Log out</button>
+              <h2 className="welcome-back">Welcome Back</h2>
+              {/* <div>{ userData }</div> */}
+              <Link className="back-to-homepage" to='/'>Back To HomePage</Link>
+              <button className="logout" onClick={this.logout}>Log out</button>
             </div>}
           </div>
         </div>
